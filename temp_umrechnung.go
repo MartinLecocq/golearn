@@ -12,9 +12,10 @@ func main() {
 	// und implizite Initialisierung mit Null-Wert
 	var tempC float64
 	// Zusätzliche Variablen aus Punkt 4.2
-	var tempF0 float64 = 0
-	var tempF1 float64 = 32
-	var tempF2 float64 = 96
+	var tempF0 float64 = -459.67
+	var tempF1 float64 = 0
+	var tempF2 float64 = 32
+	var tempF3 float64 = 96
 
 	// Deklaration einer Konstanten vom Typ float64
 	const nullpunkt float64 = -273.15
@@ -47,4 +48,11 @@ func main() {
 	fmt.Println(tempF0, "°F entsprechen", fNachC(tempF0), "°C.")
 	fmt.Println(tempF1, "°F entsprechen", fNachC(tempF1), "°C.")
 	fmt.Println(tempF2, "°F entsprechen", fNachC(tempF2), "°C.")
+	fmt.Println(tempF3, "°F entsprechen", fNachC(tempF3), "°C.")
+	fmt.Println("Andere Version:")
+	fmt.Printf("%v °F entsprechen %v °C.\n", tempF1, fNachC(tempF1))
+	fmt.Printf("%7.2f °F entsprechen %7.2f °C.\n", tempF0, fNachC(tempF0))
+	fmt.Printf("%7.2f °F entsprechen %7.2f °C.\n", tempF1, fNachC(tempF1))
+	fmt.Printf("%7.2f °F entsprechen %7.2f °C.\n", tempF2, fNachC(tempF2))
+	fmt.Printf("%7.2f °F entsprechen %7.2f °C.\n", tempF3, fNachC(tempF3))
 }

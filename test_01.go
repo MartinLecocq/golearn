@@ -17,4 +17,8 @@ func main() {
 	fmt.Printf("%d: %#[1]b %#[1]o %#[1]x\n", a)
 	// alternative Ausgabe
 	fmt.Printf("%v: %[1]b %[1]O %[1]X\n", b)
+	fmt.Println("\n")
+
+	var c uint8 = 0b00001010
+	fmt.Printf("NOT c (%08[1]b): %08[2]b\n", c, ^c)
 }

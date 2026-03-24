@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Println("--- Tests an Rundungsfehler bei Gleitkommazahlen ---")
 	var gleitkommazahl_01 float32 = 2.0 / 3.0
 	var gleitkommazahl_02 float32 = 0.67
 	var ergebnis float32 = gleitkommazahl_02 - gleitkommazahl_01
@@ -10,6 +11,7 @@ func main() {
 	// Die Mantisse ist bei float32 zwar viel großer als 8 bit (hier 23 bits). Deshalb ist die Rundungsfehler viel
 	// kleiner (0,000093%).
 
+	fmt.Println("\n--- Tests an String Datentypen und Unicode ---")
 	// Test auf Boolesche Velgeichsoperatoren für Strings
 	var bool_ergebnis = "bc" > "ad"
 	fmt.Println(bool_ergebnis)
